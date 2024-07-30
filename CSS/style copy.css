@@ -1,0 +1,385 @@
+* {
+    font-family: MiFuente;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: MiFuente;
+    src: url('../Font/DancingScript-VariableFont_wght.ttf');
+}
+
+body {
+    background-image: url(../image/fondo_rosa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* Header */
+
+#navbar {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header nav li {
+    padding: 0 15px;
+}
+
+header nav a {
+    transition: 1s !important;
+}
+
+header nav ul a:hover {
+    color: rgb(255, 0, 43) !important;
+    filter: drop-shadow(0 0 23px rgb(229, 8, 44)) !important;
+    font-size: 35px !important;
+}
+
+/* Index */
+
+.carousel-item img {
+    height: 600px;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 400px;
+    }
+}
+
+.titulo_inicio {
+    position: absolute;
+    filter: drop-shadow(0 0 10px white);
+    top: 130px;
+    margin-left: 100px;
+    width: 80%
+}
+
+.titulo_inicio h1 {
+    font-size: 40px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .titulo_inicio {
+        margin: 0 0 0 40px;
+        top: 120px;
+    }
+
+    .titulo_inicio h3 {
+        font-size: 15px !important;
+        margin-top: 30px !important;
+        width: 280px !important;
+    }
+
+    .titulo_inicio h1 {
+        font-size: 20px !important;
+    }
+}
+
+.tarjetas_item {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.col {
+    width: 480px;
+    padding: 30px !important;
+}
+
+.tarjetas2 .card:hover {
+    opacity: 70%;
+}
+
+.card {
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 85px !important;
+    }
+
+    .card-body {
+        height: 20px;
+    }
+}
+
+/* Contacto */
+
+.contacto_contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 300px;
+    column-gap: 120px;
+    padding-top: 100px;
+}
+
+.contacto_item {
+    border-right: 2px solid #29343F;
+    border-left: 2px solid #29343F;
+}
+
+@media (max-width: 1200px) {
+    .contacto_contenedor {
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: 180px;
+        column-gap: 60px;
+        padding-top: 100px !important;
+    }
+
+    .contacto_item h3 {
+        font-size: 25px !important;
+    }
+
+    .contacto_item p {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacto_contenedor {
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: 180px;
+        column-gap: 30px;
+    }
+
+    .contacto_item {
+        border: none;
+    }
+
+}
+
+.form_contacto {
+    backdrop-filter: blur(100px);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    margin: 20px 350px 0 350px;
+    padding: 50px 0 50px 0;
+    border-radius: 25px;
+}
+
+.form_contacto input[type="button"] {
+    width: 400px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.form_elemento input,
+textarea {
+    width: 400px;
+    max-width: 500px;
+    height: 40px;
+}
+
+.form_contacto .enviar:hover {
+    background-color: #29343F;
+    font-weight: bolder;
+    color: white;
+}
+
+.form_contacto .enviar:active {
+    font-size: 18px;
+    padding: 20px;
+}
+
+@media (max-width: 1200px) {
+    .form_contacto {
+        margin: 20px 50px 0 50px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .form_elemento input,
+    textarea {
+        width: 200px;
+    }
+
+    .form_contacto input[type="button"] {
+        width: 200px;
+    }
+}
+
+/* Eventos */
+
+.eventos-container {
+    height: 650px;
+}
+
+.evento-img {
+    flex: 1;
+    transition: flex 0.1s linear;
+    cursor: pointer;
+}
+
+.evento-img span {
+    opacity: 0;
+    font-size: 50px;
+}
+
+.evento-img:nth-child(1) {
+    background-image: url(../image/Cumpleaños.jfif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.evento-img:nth-child(2) {
+    background-image: url(../image/Casamiento.jfif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.evento-img:nth-child(3) {
+    background-image: url(../image/Corporativo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.evento-img:hover {
+    flex: 2;
+    filter: grayscale();
+}
+
+.evento-img:hover span {
+    opacity: 1;
+    color: black;
+}
+
+@media (max-width: 992px) {
+    .evento-item {
+        flex-direction: column;
+        margin: 100px 50px 0 50px;
+    }
+
+    .eventos-container {
+        height: 900px;
+    }
+}
+
+/* Menú */
+
+.menu_contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    column-gap: 80px;
+    padding: 150px 0 100px 0;
+}
+
+.menu_item {
+    height: 200px;
+    border-radius: 26px 58px;
+    border: 1px solid #3f3f3f;
+    grid-column: 1/2;
+}
+
+.menu_img {
+    grid-column: 2/2;
+    grid-row: 1/5;
+    filter: drop-shadow(0 0 23px #3f3f3f);
+    border-radius: 80%;
+}
+
+.menu_img img {
+    border-radius: 5%;
+    height: 800px;
+}
+
+@media (max-width: 1200px) {
+    .menu_contenedor {
+        grid-template-columns: repeat(2, 300px);
+        padding: 120px 0 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu_contenedor {
+        grid-template-columns: repeat(1, 350px);
+    }
+
+    .menu_img {
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+    }
+
+    .menu_img img {
+        height: 300px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .menu_item {
+        margin: 30px 0 10px 0;
+    }
+}
+
+/* Excelencia Culinaria */
+
+.excelencia_cont_items {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    grid-template-rows: 300px;
+    padding: 200px 0 150px 0;
+}
+
+@media (max-width: 1200px) {
+    .excelencia_cont_items {
+        grid-template-columns: repeat(2, 300px);
+        padding: 130px 0 20px 0;
+        grid-template-rows: 370px;
+    }
+}
+
+@media (max-width: 768px) {
+    .excelencia_cont_items {
+        grid-template-columns: repeat(1, 0.7fr);
+        grid-template-rows: repeat(4, 400px);
+    }
+}
+
+.excelencia_cont_items img {
+    height: 50px;
+}
+
+.excelencia_item {
+    height: 400px;
+    margin: 10px 0 10px 0;
+    background-color: transparent;
+    border: 2px solid #4d5b69;
+    border-radius: 10px;
+}
+
+.excelencia_item h2 {
+    margin: 40px 0 40px 0;
+    font-size: 30px;
+}
+
+.excelencia_item p {
+    margin: 0 30px 10px 30px;
+    font-size: 20px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #4d5b69;
+    max-width: 100%;
+    width: 100%;
+}
+
+footer ul li img {
+    height: 25px;
+}
+
+footer .whatsapp {
+    height: 80px;
+    margin-bottom: 25px;
+}

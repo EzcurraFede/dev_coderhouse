@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Picon Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body class="h-100 w-100 mw-100">
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top p-2 fs-4 fw-bold" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand p-0 m-0" href="../index.html">
+                    <img src="../image/Logo.png" alt="Logo" class="rounded-circle" style="height: 80px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 d-inline-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Html/eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Html/excelencia.html">Excelencia Culinaria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Html/menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Html/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contacto_contenedor justify-content-center align-items-center w-100 mw-100 ">
+            <div class="contacto_item d-flex flex-column justify-content-center align-items-center w-100 mw-100 h-75">
+                <h3 class="fs-2">Dirección</h3>
+                <p class="fs-4 fst-italic mt-4">calle x altura x</p>
+            </div>
+            <div class="contacto_item d-flex flex-column justify-content-center align-items-center w-100 mw-100 h-75">
+                <h3 class="fs-2">Whatsapp</h3>
+                <p class="fs-4 fst-italic mt-4">xx-xxxx-xxxx</p>
+            </div>
+            <div class="contacto_item d-flex flex-column justify-content-center align-items-center w-100 mw-100 h-75">
+                <h3 class="fs-2">Email</h3>
+                <p class="fs-4 fst-italic mt-4">xxxxxxxxx@xxxxxxx.com</p>
+            </div>
+        </section>
+
+        <section>
+            <form class="form_contacto d-flex flex-column align-items-center justify-content-center">
+                <h2 class="fs-2 mb-3">Contactanos</h2>
+                <div class="form_elemento p-2">
+                    <label for="nombre" class="d-flex fw-bold fs-4 mb-2">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Pedro Gomez" required class="fs-5">
+                </div>
+                <div class="form_elemento p-2">
+                    <label for="email" class="d-flex fw-bold fs-4 mb-2">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="pedro123@gmail.com" required class="fs-5">
+                </div>
+                <div class="form_elemento p-2">
+                    <label for="mensaje" class="d-flex fw-bold fs-4 mb-2">Consulta:</label>
+                    <textarea id="mensaje" name="mensaje" required class="fs-5 h-100"></textarea>
+                </div>
+                <div>
+                    <input type="button" value="enviar" class="enviar p-3 fs-5 text-uppercase $enable-button-pointers">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="p-0 w-100 container-fluid mb-0">
+        <ul class="m-0 p-4 d-flex list-unstyled">
+            <li class="me-5"><a href="https://facebook.com"><img src="../image/Facebook.webp" alt="Facebook"></a>
+            </li>
+            <li class="me-5"><a href="https://instagram.com"><img src="../image/Instagram.webp" alt="Instagram"></a>
+            </li>
+            <li class="me-5"><a href="https://x.com"><img src="../image/X.webp" alt="X"></a></li>
+            <li class="position-fixed bottom-0 end-0"><a href="https://whatsapp.com"><img src="../image/Whatsapp.webp"
+                        alt="Whatsapp" class="whatsapp"></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
