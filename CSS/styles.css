@@ -30,12 +30,14 @@ header nav li {
 
 header nav a {
     transition: 1s !important;
+    border-radius: 20px;
 }
 
 header nav ul a:hover {
     color: rgb(255, 0, 43) !important;
     filter: drop-shadow(0 0 23px rgb(229, 8, 44)) !important;
     font-size: 35px !important;
+    background-color: rgba(255, 255, 255, 0.552);
 }
 
 /* Index */
@@ -95,11 +97,13 @@ header nav ul a:hover {
 
 .tarjetas2 .card:hover {
     opacity: 70%;
+    transform: scale(1.1);
 }
 
 .card {
     border-radius: 40px;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 @media (max-width: 768px) {
@@ -382,4 +386,10 @@ footer ul li img {
 footer .whatsapp {
     height: 80px;
     margin-bottom: 25px;
+    transition: 2s;
+}
+
+footer .whatsapp:hover {
+    transform: rotate(360deg) scale(2);
+    margin-right: 20px;
 }

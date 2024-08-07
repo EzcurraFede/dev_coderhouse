@@ -8,7 +8,8 @@
     <title>Catering Picon</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
 
 </head>
 
@@ -67,38 +68,44 @@
         <section class="titulo_inicio container-fluid">
             <h1 class="text-light">Servicio de Catering Picón</h1>
             <h3 class="fs-3 text-light lh-lg mt-5 fst-italic w-50">Eleva tu evento con nuestros excepcionales servicios.
-                Con platos deliciosos hasta una presentación impecable, creamos experiencias gastronómicas memorables.
+                Con platos deliciosos hasta una presentación impecable, creamos experiencias memorables.
             </h3>
         </section>
 
-        <section class="tarjetas2">
+        <section class="tarjetas_contenedor">
             <div class="tarjetas_item row row-cols-1 row-cols-md-3 g-xxl-2 pb-5 pt-5">
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <img src="image/Corporativo2.jpg" class="card-img-top img-fluid" alt="Eventos_corporativos">
                         <div class="card-body">
-                            <h5 class="card-title fs-4">Eventos</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title fs-3">Eventos</h5>
+                            <p class="card-text fs-5">Alta calidad para eventos corporativos, adaptado a tus necesidades
+                                y diseñado para impresionar.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <img src="image/menu_canape.jpeg" class="card-img-top img-fluid" alt="Menu">
                         <div class="card-body">
-                            <h5 class="card-title fs-4">Menú</h5>
-                            <p class="card-text">This is a short card.</p>
+                            <h5 class="card-title fs-3">Menú</h5>
+                            <p class="card-text fs-5">Descubre nuestros menús personalizados para cada ocasión.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100" data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <img src="image/Excelencia.jpg" class="card-img-top img-fluid" alt="Excelencia_Culinaria">
                         <div class="card-body">
-                            <h5 class="card-title fs-4">Excelencia Culinaria</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.</p>
+                            <h5 class="card-title fs-3">Excelencia Culinaria</h5>
+                            <p class="card-text fs-5">Ofrecemos platos de alta calidad, elaborados con ingredientes
+                                frescos para una experiencia excepcional</p>
                         </div>
                     </div>
                 </div>
@@ -108,13 +115,19 @@
 
     <footer class="w-100 container-fluid mb-0">
         <ul class="m-0 p-4 d-flex list-unstyled">
-            <li class="me-5 img-fluid"><a href="https://facebook.com"><img src="image/Facebook.webp" alt="Facebook"></a>
+            <li class="me-5 img-fluid red_facebook"><a href="https://facebook.com"><img src="image/Facebook.webp"
+                        alt="Facebook"></a>
+                <span class="red_nombre">Facebook</span></li>
+            <li class="me-5 img-fluid red_instagram"><a href="https://instagram.com"><img src="image/Instagram.webp"
+                        alt="Instagram"></a>
+                <span class="red_nombre">Instagram</span></li>
             </li>
-            <li class="me-5 img-fluid"><a href="https://instagram.com"><img src="image/Instagram.webp"
-                        alt="Instagram"></a></li>
-            <li class="me-5 img-fluid"><a href="https://x.com"><img src="image/X.webp" alt="X"></a></li>
+            <li class="me-5 img-fluid red_twitter"><a href="https://x.com"><img src="image/X.webp" alt="X"></a>
+                <span class="red_nombre">X</span></li>
+            </li>
             <li class="position-fixed bottom-0 end-0"><a href="https://whatsapp.com"><img src="image/Whatsapp.webp"
                         alt="Whatsapp" class="whatsapp"></a></li>
+
         </ul>
     </footer>
 
@@ -126,6 +139,11 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

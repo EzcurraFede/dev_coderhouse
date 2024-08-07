@@ -1,0 +1,23 @@
+#navbar {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header nav {
+    li {
+        padding: 0 15px;
+    }
+
+    a {
+        transition: 1s !important;
+        border-radius: 20px;
+    }
+
+    ul a:hover {
+        color: rgb(255, 0, 43) !important;
+        filter: drop-shadow(0 0 23px rgb(229, 8, 44)) !important;
+        font-size: 35px !important;
+        background-color: rgba(255, 255, 255, 0.552);
+    }
+}

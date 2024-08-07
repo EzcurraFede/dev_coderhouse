@@ -1,0 +1,46 @@
+footer {
+    background-color: #4d5b69;
+    max-width: 100%;
+    width: 100%;
+
+    ul {
+        li {
+            padding: 0 25px;
+            transition: 0.8s;
+
+            &:hover {
+                transform: scale(1.5);
+
+                .red_nombre {
+                    opacity: 0.8;
+                }
+            }
+
+            img {
+                height: 25px;
+            }
+
+            .whatsapp {
+                height: 80px;
+                margin-bottom: 25px;
+                transition: 1s;
+
+                &:hover {
+                    transform: rotate(360deg) scale(1);
+                    margin-right: 30px;
+                }
+            }
+
+            .red_nombre {
+                position: absolute;
+                opacity: 0;
+                top: 5px;
+                left: 60px;
+                transition: 0.5s;
+                font-size: 13px;
+                background-color: #4d5b69;
+                color: white;
+            }
+        }
+    }
+}

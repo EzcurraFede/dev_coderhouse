@@ -1,0 +1,53 @@
+.eventos-container {
+    height: 650px;
+
+    .evento-img {
+        flex: 1;
+        transition: flex 0.1s linear;
+        cursor: pointer;
+
+        span {
+            opacity: 0;
+            font-size: 50px;
+        }
+
+        &:nth-child(1) {
+            background-image: url(../image/Cumpleaños.jfif);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        &:nth-child(2) {
+            background-image: url(../image/Casamiento.jfif);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        &:nth-child(3) {
+            background-image: url(../image/Corporativo.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        &:hover {
+            flex: 3;
+            filter: Grayscale();
+
+            span {
+                opacity: 1;
+                color: white;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .eventos-container {
+        height: 900px;
+
+        .evento-item {
+            flex-direction: column;
+            margin: 100px 50px 0 50px;
+        }
+    }
+}
