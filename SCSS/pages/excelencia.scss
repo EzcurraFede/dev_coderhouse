@@ -10,6 +10,9 @@
         background-color: transparent;
         border: 2px solid #4d5b69;
         border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+
 
         h2 {
             margin: 40px 0 40px 0;
@@ -23,6 +26,19 @@
 
         img {
             height: 50px;
+        }
+
+        &:hover {
+            transform: scale(1.1) rotate(-15deg);
+            backdrop-filter: blur(100px);
+            background-color: #4d5b69;
+            color: white;
+
+            img {
+                border-radius: 50%;
+                background-color: white;
+                opacity: 0.5;
+            }
         }
     }
 }

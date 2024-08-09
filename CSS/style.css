@@ -87,26 +87,29 @@ header nav ul a:hover {
 }
 
 .form_contacto {
-  backdrop-filter: blur(100px);
-  border: 3px solid rgba(255, 255, 255, 0.5);
-  background-color: transparent;
-  margin: 20px 350px 0 350px;
+  background-color: #29343F;
+  margin: 20px 350px 10px 350px;
   padding: 50px 0 50px 0;
   border-radius: 25px;
+  color: white;
 }
 .form_contacto input[type=button] {
   width: 400px;
   background-color: transparent;
   transition: 0.5s;
-}
-.form_contacto .enviar:hover {
-  background-color: #29343F;
-  font-weight: bolder;
   color: white;
 }
+.form_contacto .enviar:hover {
+  background-color: white;
+  font-weight: bolder;
+  color: black;
+  transform: scale(1.1);
+  border-radius: 15px;
+}
 .form_contacto .enviar:active {
-  font-size: 18px;
   padding: 20px;
+  background-color: rgb(237, 134, 151);
+  color: white;
 }
 .form_contacto .form_elemento input,
 .form_contacto textarea {
@@ -206,6 +209,8 @@ header nav ul a:hover {
   background-color: transparent;
   border: 2px solid #4d5b69;
   border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
 }
 .excelencia_cont_items .excelencia_item h2 {
   margin: 40px 0 40px 0;
@@ -217,6 +222,17 @@ header nav ul a:hover {
 }
 .excelencia_cont_items .excelencia_item img {
   height: 50px;
+}
+.excelencia_cont_items .excelencia_item:hover {
+  transform: scale(1.1) rotate(-15deg);
+  backdrop-filter: blur(100px);
+  background-color: #4d5b69;
+  color: white;
+}
+.excelencia_cont_items .excelencia_item:hover img {
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.5;
 }
 
 @media (max-width: 1200px) {

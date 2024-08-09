@@ -12,29 +12,32 @@
 }
 
 .form_contacto {
-    backdrop-filter: blur(100px);
-    border: 3px solid rgba(255, 255, 255, 0.5);
-    background-color: transparent;
-    margin: 20px 350px 0 350px;
+    background-color: #29343F;
+    margin: 20px 350px 10px 350px;
     padding: 50px 0 50px 0;
     border-radius: 25px;
+    color:white;
 
     input[type="button"] {
         width: 400px;
         background-color: transparent;
         transition: 0.5s;
+        color:white;
     }
 
     .enviar {
         &:hover {
-            background-color: #29343F;
+            background-color: white;
             font-weight: bolder;
-            color: white;
+            color: black;
+            transform: scale(1.1);
+            border-radius: 15px;
         }
 
         &:active {
-            font-size: 18px;
             padding: 20px;
+            background-color: rgb(237, 134, 151);
+            color:white;
         }
     }
 
