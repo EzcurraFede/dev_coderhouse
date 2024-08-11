@@ -15,9 +15,22 @@
         grid-column: 1/2;
         background: linear-gradient(270deg, #fda4a4, #f4a2f5, #f5ae74);
         background-size: 600% 600%;
-        animation: fondogradiente 3s ease infinite;
         filter: drop-shadow(0 0 5px #3f3f3f);
+        animation: fondogradiente 3s ease infinite;
 
+        @keyframes fondogradiente {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
     }
 
     .menu_img {
@@ -30,20 +43,6 @@
             border-radius: 5%;
             height: 800px;
         }
-    }
-}
-
-@keyframes fondogradiente {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
     }
 }
 
