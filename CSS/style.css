@@ -336,24 +336,6 @@ header nav ul a:hover {
   grid-template-columns: repeat(2, 450px);
   column-gap: 80px;
   padding: 150px 0 100px 0;
-  /*   background: linear-gradient(278deg, #f39b9b, #9c9ff9, #ffffff);
-  background-size: 600% 600%;
-
-  animation: AnimationName 17s ease infinite;
-
-  @keyframes AnimationName {
-      0% {
-          background-position: 0% 56%
-      }
-
-      50% {
-          background-position: 100% 45%
-      }
-
-      100% {
-          background-position: 0% 56%
-      }
-  }*/
 }
 .menu_contenedor .menu_item {
   display: flex;
@@ -363,6 +345,10 @@ header nav ul a:hover {
   border-radius: 26px 58px;
   border: 1px solid #3f3f3f;
   grid-column: 1/2;
+  background: linear-gradient(270deg, #fda4a4, #f4a2f5, #f5ae74);
+  background-size: 600% 600%;
+  animation: fondogradiente 3s ease infinite;
+  filter: drop-shadow(0 0 5px #3f3f3f);
 }
 .menu_contenedor .menu_img {
   grid-column: 2/2;
@@ -375,6 +361,17 @@ header nav ul a:hover {
   height: 800px;
 }
 
+@keyframes fondogradiente {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 @media (max-width: 1200px) {
   .menu_contenedor {
     grid-template-columns: repeat(2, 300px);
