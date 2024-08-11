@@ -336,6 +336,24 @@ header nav ul a:hover {
   grid-template-columns: repeat(2, 450px);
   column-gap: 80px;
   padding: 150px 0 100px 0;
+  /*   background: linear-gradient(278deg, #f39b9b, #9c9ff9, #ffffff);
+  background-size: 600% 600%;
+
+  animation: AnimationName 17s ease infinite;
+
+  @keyframes AnimationName {
+      0% {
+          background-position: 0% 56%
+      }
+
+      50% {
+          background-position: 100% 45%
+      }
+
+      100% {
+          background-position: 0% 56%
+      }
+  }*/
 }
 .menu_contenedor .menu_item {
   display: flex;

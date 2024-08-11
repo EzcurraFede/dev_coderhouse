@@ -1,14 +1,32 @@
 @import "../utilities/mixins.scss";
 
 .menu_contenedor {
-    @include display-pos(grid,center,center);
-    @include widths (100%,100%);
+    @include display-pos(grid, center, center);
+    @include widths (100%, 100%);
     grid-template-columns: repeat(2, 450px);
     column-gap: 80px;
     padding: 150px 0 100px 0;
+    /*   background: linear-gradient(278deg, #f39b9b, #9c9ff9, #ffffff);
+    background-size: 600% 600%;
+
+    animation: AnimationName 17s ease infinite;
+
+    @keyframes AnimationName {
+        0% {
+            background-position: 0% 56%
+        }
+
+        50% {
+            background-position: 100% 45%
+        }
+
+        100% {
+            background-position: 0% 56%
+        }
+    }*/
 
     .menu_item {
-        @include display-pos(flex,center,start);
+        @include display-pos(flex, center, start);
         height: 200px;
         border-radius: 26px 58px;
         border: 1px solid #3f3f3f;
@@ -28,30 +46,30 @@
     }
 }
 
-@media (max-width: 1200px) {
-    .menu_contenedor {
-        grid-template-columns: repeat(2, 300px);
-        padding: 120px 0 20px 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .menu_contenedor {
-        grid-template-columns: repeat(1, 350px);
-
-        .menu_item {
-            margin: 30px 0 10px 0;
+    @media (max-width: 1200px) {
+        .menu_contenedor {
+            grid-template-columns: repeat(2, 300px);
+            padding: 120px 0 20px 0;
         }
+    }
 
-        .menu_img {
-            grid-column: 1/2;
-            grid-row: 2/3;
+    @media (max-width: 768px) {
+        .menu_contenedor {
+            grid-template-columns: repeat(1, 350px);
 
-            img {
-                height: 300px;
-                width: 100%;
-                margin-top: 20px;
+            .menu_item {
+                margin: 30px 0 10px 0;
+            }
+
+            .menu_img {
+                grid-column: 1/2;
+                grid-row: 2/3;
+
+                img {
+                    height: 300px;
+                    width: 100%;
+                    margin-top: 20px;
+                }
             }
         }
     }
-}
