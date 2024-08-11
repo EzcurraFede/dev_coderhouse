@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
-<body class="h-100 w-100 mw-100">
+<body class="h-100">
     <header>
         <nav class="navbar navbar-expand-md fixed-top p-2 fs-4 fw-bold" id="navbar">
             <div class="container-fluid">
@@ -46,23 +46,23 @@
     </header>
 
     <main>
-        <section class="contacto_contenedor justify-content-center align-items-center w-100 mw-100 ">
-            <div class="contacto_item d-flex flex-column justify-content-center align-items-center w-100 mw-100 h-75">
+        <section class="contacto_contenedor w-100 mw-100 ">
+            <div class="contacto_item flex-column h-75">
                 <h3 class="fs-2">Dirección</h3>
                 <p class="fs-4 fst-italic mt-4">calle x altura x</p>
             </div>
-            <div class="contacto_item d-flex flex-column justify-content-center align-items-center w-100 mw-100 h-75">
+            <div class="contacto_item flex-column w-100 mw-100 h-75">
                 <h3 class="fs-2">Whatsapp</h3>
                 <p class="fs-4 fst-italic mt-4">xx-xxxx-xxxx</p>
             </div>
-            <div class="contacto_item d-flex flex-column justify-content-center align-items-center w-100 mw-100 h-75">
+            <div class="contacto_item flex-column w-100 mw-100 h-75">
                 <h3 class="fs-2">Email</h3>
                 <p class="fs-4 fst-italic mt-4">xxxxxxxxx@xxxxxxx.com</p>
             </div>
         </section>
 
         <section>
-            <form class="form_contacto d-flex flex-column align-items-center justify-content-center">
+            <form class="form_contacto flex-column">
                 <h2 class="fs-2 mb-3">Contactanos</h2>
                 <div class="form_elemento p-2">
                     <label for="nombre" class="d-flex fw-bold fs-4 mb-2">Nombre:</label>
@@ -83,16 +83,20 @@
         </section>
     </main>
 
-    <footer class="p-0 w-100 container-fluid mb-0">
+    <footer class="w-100 container-fluid mb-0">
         <ul class="m-0 p-4 d-flex list-unstyled">
-            <li class="me-5"><a href="https://facebook.com"><img src="../image/Facebook.webp" alt="Facebook"></a>
+            <li class="me-5 img-fluid red_facebook"><a href="https://facebook.com"><img src="../image/Facebook.webp"
+                        alt="Facebook"></a>
+                <span class="red_nombre">Facebook</span></li>
+            <li class="me-5 img-fluid red_instagram"><a href="https://instagram.com"><img src="../image/Instagram.webp"
+                        alt="Instagram"></a>
+                <span class="red_nombre">Instagram</span></li>
             </li>
-            <li class="me-5"><a href="https://instagram.com"><img src="../image/Instagram.webp" alt="Instagram"></a>
+            <li class="me-5 img-fluid red_twitter"><a href="https://x.com"><img src="../image/X.webp" alt="X"></a>
+                <span class="red_nombre">X</span></li>
             </li>
-            <li class="me-5"><a href="https://x.com"><img src="../image/X.webp" alt="X"></a></li>
             <li class="position-fixed bottom-0 end-0"><a href="https://whatsapp.com"><img src="../image/Whatsapp.webp"
-                        alt="Whatsapp" class="whatsapp"></a>
-            </li>
+                        alt="Whatsapp" class="whatsapp"></a></li>
         </ul>
     </footer>
 

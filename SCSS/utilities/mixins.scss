@@ -1,0 +1,10 @@
+@mixin display-pos($display, $justify, $align) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin widths ($width, $max) {
+    width: $width;
+    max-width: $max;
+}

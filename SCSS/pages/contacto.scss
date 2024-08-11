@@ -1,43 +1,44 @@
+@import "../utilities/mixins.scss";
+
 .contacto_contenedor {
-    display: grid;
+    @include display-pos(grid,center,center);
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: 300px;
     column-gap: 120px;
     padding-top: 100px;
 
     .contacto_item {
+        @include display-pos(flex,center,center);
+        @include widths(100%,100%);
         border-right: 2px solid #29343F;
         border-left: 2px solid #29343F;
     }
 }
 
 .form_contacto {
+    @include display-pos(flex,center,center);
     background-color: #29343F;
     margin: 20px 350px 10px 350px;
     padding: 50px 0 50px 0;
     border-radius: 25px;
-    color:white;
+    color: white;
 
     input[type="button"] {
         width: 400px;
         background-color: transparent;
-        transition: 0.5s;
-        color:white;
+        color: white;
     }
 
     .enviar {
         &:hover {
-            background-color: white;
+            background-color: rgb(237, 134, 151);
             font-weight: bolder;
             color: black;
-            transform: scale(1.1);
-            border-radius: 15px;
         }
 
         &:active {
+            background-color: white;
             padding: 20px;
-            background-color: rgb(237, 134, 151);
-            color:white;
         }
     }
 

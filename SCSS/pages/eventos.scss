@@ -1,7 +1,10 @@
+@import "../utilities/mixins.scss";
+
 .eventos-container {
     height: 650px;
 
     .evento-img {
+        @include display-pos(flex, center, center);
         flex: 1;
         transition: flex 0.1s linear;
         cursor: pointer;

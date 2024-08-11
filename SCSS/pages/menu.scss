@@ -1,10 +1,14 @@
+@import "../utilities/mixins.scss";
+
 .menu_contenedor {
-    display: grid;
+    @include display-pos(grid,center,center);
+    @include widths (100%,100%);
     grid-template-columns: repeat(2, 450px);
     column-gap: 80px;
     padding: 150px 0 100px 0;
 
     .menu_item {
+        @include display-pos(flex,center,start);
         height: 200px;
         border-radius: 26px 58px;
         border: 1px solid #3f3f3f;

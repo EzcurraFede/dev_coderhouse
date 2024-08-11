@@ -14,6 +14,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 footer {
@@ -76,17 +78,27 @@ header nav ul a:hover {
 
 .contacto_contenedor {
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: repeat(3, 300px);
   grid-template-rows: 300px;
   column-gap: 120px;
   padding-top: 100px;
 }
 .contacto_contenedor .contacto_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
   border-right: 2px solid #29343F;
   border-left: 2px solid #29343F;
 }
 
 .form_contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #29343F;
   margin: 20px 350px 10px 350px;
   padding: 50px 0 50px 0;
@@ -96,20 +108,16 @@ header nav ul a:hover {
 .form_contacto input[type=button] {
   width: 400px;
   background-color: transparent;
-  transition: 0.5s;
   color: white;
 }
 .form_contacto .enviar:hover {
-  background-color: white;
+  background-color: rgb(237, 134, 151);
   font-weight: bolder;
   color: black;
-  transform: scale(1.1);
-  border-radius: 15px;
 }
 .form_contacto .enviar:active {
+  background-color: white;
   padding: 20px;
-  background-color: rgb(237, 134, 151);
-  color: white;
 }
 .form_contacto .form_elemento input,
 .form_contacto textarea {
@@ -156,6 +164,9 @@ header nav ul a:hover {
   height: 650px;
 }
 .eventos-container .evento-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1;
   transition: flex 0.1s linear;
   cursor: pointer;
@@ -199,11 +210,16 @@ header nav ul a:hover {
 }
 .excelencia_cont_items {
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: repeat(4, 280px);
   grid-template-rows: 300px;
   padding: 200px 0 150px 0;
 }
 .excelencia_cont_items .excelencia_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 400px;
   margin: 10px 0 10px 0;
   background-color: transparent;
@@ -313,11 +329,18 @@ header nav ul a:hover {
 }
 .menu_contenedor {
   display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
   grid-template-columns: repeat(2, 450px);
   column-gap: 80px;
   padding: 150px 0 100px 0;
 }
 .menu_contenedor .menu_item {
+  display: flex;
+  justify-content: center;
+  align-items: start;
   height: 200px;
   border-radius: 26px 58px;
   border: 1px solid #3f3f3f;

@@ -1,3 +1,5 @@
+@import "../utilities/mixins.scss";
+
 * {
     font-family: MiFuente;
     margin: 0;
@@ -14,4 +16,5 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
+    @include widths(100%,100%);
 }
