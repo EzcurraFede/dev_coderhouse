@@ -42,8 +42,9 @@ footer ul li .whatsapp {
   transition: 1s;
 }
 footer ul li .whatsapp:hover {
-  transform: rotate(360deg) scale(1);
+  transform: scale(1);
   margin-right: 30px;
+  filter: brightness(1.5);
 }
 footer ul li .red_nombre {
   position: absolute;
@@ -63,7 +64,7 @@ footer ul li .red_nombre {
 }
 
 header nav li {
-  padding: 0 15px;
+  padding: 0 20px;
 }
 header nav a {
   transition: 1s !important;
@@ -73,7 +74,6 @@ header nav ul a:hover {
   color: rgb(255, 0, 43) !important;
   filter: drop-shadow(0 0 23px rgb(229, 8, 44)) !important;
   font-size: 35px !important;
-  background-color: rgba(255, 255, 255, 0.552);
 }
 
 .contacto_contenedor {
@@ -109,15 +109,12 @@ header nav ul a:hover {
   width: 400px;
   background-color: transparent;
   color: white;
+  border-radius: 20px;
 }
 .form_contacto .enviar:hover {
   background-color: rgb(237, 134, 151);
   font-weight: bolder;
   color: black;
-}
-.form_contacto .enviar:active {
-  background-color: white;
-  padding: 20px;
 }
 .form_contacto .form_elemento input,
 .form_contacto textarea {
@@ -238,17 +235,16 @@ header nav ul a:hover {
 }
 .excelencia_cont_items .excelencia_item img {
   height: 50px;
+  transition: 1s;
 }
 .excelencia_cont_items .excelencia_item:hover {
-  transform: scale(1.1) rotate(-15deg);
+  transform: scale(1.1) rotate(-5deg);
   backdrop-filter: blur(100px);
   background-color: #4d5b69;
   color: white;
 }
 .excelencia_cont_items .excelencia_item:hover img {
-  border-radius: 50%;
-  background-color: white;
-  opacity: 0.5;
+  transform: scale(1.2);
 }
 
 @media (max-width: 1200px) {
@@ -289,7 +285,7 @@ header nav ul a:hover {
 }
 .tarjetas_contenedor .tarjetas_item .col:hover {
   opacity: 70%;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .tarjetas_contenedor .tarjetas_item .col .card {
   cursor: pointer;
@@ -337,6 +333,9 @@ header nav ul a:hover {
   column-gap: 80px;
   padding: 150px 0 100px 0;
 }
+.menu_contenedor .menu_titulo {
+  font-size: 50px;
+}
 .menu_contenedor .menu_item {
   display: flex;
   justify-content: center;
@@ -345,10 +344,10 @@ header nav ul a:hover {
   border-radius: 26px 58px;
   border: 1px solid #3f3f3f;
   grid-column: 1/2;
-  background: linear-gradient(270deg, #fda4a4, #f4a2f5, #f5ae74);
+  background: linear-gradient(270deg, #ffd2d2, #f7cbf7, #d4dafe);
   background-size: 600% 600%;
   filter: drop-shadow(0 0 5px #3f3f3f);
-  animation: fondogradiente 3s ease infinite;
+  animation: fondogradiente 10s ease infinite;
 }
 @keyframes fondogradiente {
   0% {
@@ -364,7 +363,7 @@ header nav ul a:hover {
 .menu_contenedor .menu_img {
   grid-column: 2/2;
   grid-row: 1/5;
-  filter: drop-shadow(0 0 23px #3f3f3f);
+  filter: drop-shadow(0 0 5px #3f3f3f);
   border-radius: 80%;
 }
 .menu_contenedor .menu_img img {

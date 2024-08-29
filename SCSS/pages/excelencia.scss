@@ -28,18 +28,18 @@
 
         img {
             height: 50px;
+            transition: 1s;
+
         }
 
         &:hover {
-            transform: scale(1.1) rotate(-15deg);
+            transform: scale(1.1) rotate(-5deg);
             backdrop-filter: blur(100px);
             background-color: #4d5b69;
             color: white;
 
             img {
-                border-radius: 50%;
-                background-color: white;
-                opacity: 0.5;
+                transform: scale(1.2);
             }
         }
     }

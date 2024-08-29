@@ -26,8 +26,9 @@ footer {
                 transition: 1s;
 
                 &:hover {
-                    transform: rotate(360deg) scale(1);
+                    transform: scale(1);
                     margin-right: 30px;
+                    filter: brightness(1.5);
                 }
             }
 

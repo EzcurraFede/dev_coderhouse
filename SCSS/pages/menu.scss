@@ -7,16 +7,20 @@
     column-gap: 80px;
     padding: 150px 0 100px 0;
 
+    .menu_titulo{
+        font-size: 50px;
+    }
+
     .menu_item {
         @include display-pos(flex, center, start);
         height: 200px;
         border-radius: 26px 58px;
         border: 1px solid #3f3f3f;
         grid-column: 1/2;
-        background: linear-gradient(270deg, #fda4a4, #f4a2f5, #f5ae74);
+        background: linear-gradient(270deg, #ffd2d2, #f7cbf7, #d4dafe);
         background-size: 600% 600%;
         filter: drop-shadow(0 0 5px #3f3f3f);
-        animation: fondogradiente 3s ease infinite;
+        animation: fondogradiente 10s ease infinite;
 
         @keyframes fondogradiente {
             0% {
@@ -36,7 +40,7 @@
     .menu_img {
         grid-column: 2/2;
         grid-row: 1/5;
-        filter: drop-shadow(0 0 23px #3f3f3f);
+        filter: drop-shadow(0 0 5px #3f3f3f);
         border-radius: 80%;
 
         img {
